@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Domina Google Keep</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #e2e8f0;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #facc15; 
+            border-radius: 4px;
+        }
+
+        /* Neon Glow Effects */
+        .glow-yellow {
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glow-yellow:hover {
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.6);
+            transform: translateY(-5px);
+            border-color: #facc15;
+        }
+
+        .glow-cyan {
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glow-cyan:hover {
+            box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+            transform: translateY(-5px);
+            border-color: #22d3ee;
+        }
+
+        .glow-pink {
+            box-shadow: 0 0 15px rgba(244, 114, 182, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glow-pink:hover {
+            box-shadow: 0 0 25px rgba(244, 114, 182, 0.6);
+            transform: translateY(-5px);
+            border-color: #f472b6;
+        }
+
+        .glow-green {
+            box-shadow: 0 0 15px rgba(74, 222, 128, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glow-green:hover {
+            box-shadow: 0 0 25px rgba(74, 222, 128, 0.6);
+            transform: translateY(-5px);
+            border-color: #4ade80;
+        }
+
+        /* Hero Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-icon {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        /* Image Placeholder Style */
+        .img-placeholder {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 selection:bg-yellow-400 selection:text-black">
+
+    <!-- Header Section -->
+    <header class="text-center max-w-4xl mx-auto mb-12 mt-8">
+        <div class="inline-block p-3 rounded-full bg-yellow-400 bg-opacity-10 mb-4 border border-yellow-400/30">
+            <i class="fa-regular fa-lightbulb text-4xl text-yellow-400 floating-icon"></i>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 mb-4 tracking-tight">
+            Google Keep
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 font-light">
+            Tu segundo cerebro digital. Captura, organiza y crea.
+        </p>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16 px-4">
+
+        <!-- Card 1: Rapidez -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-yellow relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-yellow-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="text-yellow-400 text-3xl mb-4">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Captura al Instante</h3>
+            <p class="text-gray-400 leading-relaxed">
+                No dejes que las ideas se escapen. Abre la app y escribe en milisegundos. ¿Sin manos? Usa las <strong>notas de voz</strong> que se transcriben automáticamente.
+            </p>
+        </article>
+
+        <!-- Card 2: Listas -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-cyan relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="text-cyan-400 text-3xl mb-4">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Checklists Dinámicos</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Perfecto para el supermercado o tareas pendientes. Marca elementos y velos moverse al final de la lista. ¡Satisfacción instantánea!
+            </p>
+        </article>
+
+        <!-- Card 3: Organización Visual -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-pink relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="text-pink-400 text-3xl mb-4">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Código de Colores</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Organiza tu vida visualmente. <span class="text-red-400">Rojo</span> para urgente, <span class="text-green-400">Verde</span> para personal, <span class="text-blue-400">Azul</span> para trabajo. Encuentra todo de un vistazo.
+            </p>
+        </article>
+
+        <!-- Card 4: Recordatorios -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-green relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-green-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="text-green-400 text-3xl mb-4">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Recordatorios Geo-locales</h3>
+            <p class="text-gray-400 leading-relaxed">
+                ¿Necesitas comprar leche? Configura la nota para que te avise <strong>cuando llegues</strong> al supermercado. Magia basada en ubicación.
+            </p>
+        </article>
+
+        <!-- Card 5: Colaboración -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-cyan relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="text-indigo-400 text-3xl mb-4">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Colaboración Real</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Comparte tu lista de compras o ideas de proyecto con amigos y familiares. Vean los cambios en tiempo real sin enviar mensajes.
+            </p>
+        </article>
+
+        <!-- Card 6: Multiplataforma (Actualizado) -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-yellow relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-orange-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <!-- Icono actualizado a Sync/Rotate -->
+            <div class="text-orange-400 text-3xl mb-4">
+                <i class="fa-solid fa-rotate"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Sincronización Total</h3>
+            <p class="text-gray-400 leading-relaxed">
+                Empieza en el móvil, edita en la tablet, finaliza en la PC. Tus notas están en la nube, seguras y accesibles siempre.
+            </p>
+        </article>
+
+        <!-- Card 7: Integración Correo -->
+        <article class="bg-gray-800 rounded-2xl p-8 border border-gray-700 glow-pink relative overflow-hidden group md:col-span-2 lg:col-span-3">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-red-500 rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                <div class="text-red-400 text-3xl mb-2 md:mb-0">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Integración con tu Correo</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Sincronización directa en tu correo. Puedes utilizarlo tanto en la PC (barra lateral de Gmail) como en el teléfono para registrar tus notas sin perder el ritmo.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Images Section (Screenshots) -->
+    <section class="w-full max-w-6xl mx-auto mb-16 px-4">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Así se ve Google Keep</h2>
+            <p class="text-gray-400 mt-2">Interfaz limpia, intuitiva y potente.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
+            
+            <!-- Imagen 1 Container -->
+            <div class="bg-gray-800 p-2 rounded-xl border border-gray-700 shadow-2xl hover:border-yellow-400/50 transition-colors duration-300">
+                <!-- SRC Intercambiado: Ahora muestra la imagen del Logo/Bombillo (qxFkQ4T) -->
+                <img src="https://i.imgur.com/qxFkQ4T.png" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x600/1e293b/fbbf24?text=Error+Cargando+Imgur';"
+                     alt="Captura de pantalla de Google Keep con logo" 
+                     class="w-full h-auto rounded-lg object-cover">
+                <div class="mt-2 text-center text-sm text-gray-500">Vista de Notas y Listas</div>
+            </div>
+
+            <!-- Imagen 2 Container -->
+            <div class="bg-gray-800 p-2 rounded-xl border border-gray-700 shadow-2xl hover:border-yellow-400/50 transition-colors duration-300">
+                <!-- SRC Intercambiado: Ahora muestra la imagen de Listas (LkzI4nf) -->
+                <img src="https://i.imgur.com/LkzI4nf.png" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x600/1e293b/fbbf24?text=Error+Cargando+Imgur';"
+                     alt="Captura de pantalla de Google Keep con notas y lista de compras" 
+                     class="w-full h-auto rounded-lg object-cover">
+                <div class="mt-2 text-center text-sm text-gray-500">Vista de Edición y Logo</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-white mb-6">¿Listo para organizarte?</h2>
+        <a href="https://keep.google.com" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-yellow-400/50 hover:scale-105 transition-all duration-300">
+            <i class="fa-solid fa-plus"></i>
+            Crear mi primera nota
+        </a>
+        <p class="mt-8 text-sm text-gray-500">
+            Disponible en Android, iOS y Web. Gratis con tu cuenta Google.
+        </p>
+    </footer>
+
+</body>
+</html>
